@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class atv01 {
+public class ep01 {
     public static void main(String[] args) {
 
         Scanner entrada = new Scanner(System.in);
@@ -11,6 +11,8 @@ public class atv01 {
         a = entrada.nextInt();
         b = entrada.nextInt();
         c = entrada.nextInt();
+
+        entrada.close();
 
         if ((a <= b) && (a <= c)) {
             if (b <= c) {
