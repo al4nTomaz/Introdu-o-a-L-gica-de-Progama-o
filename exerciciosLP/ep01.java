@@ -10,7 +10,7 @@ public class ep01 {
         System.out.print("Digite três valores: ");
         a = entrada.nextInt();
         b = entrada.nextInt();
-        c = entrada.nextInt();
+        c = entrada.nextInt();        
 
         entrada.close();
 
@@ -34,5 +34,6 @@ public class ep01 {
             }
         }
 
+        
     }
 }
