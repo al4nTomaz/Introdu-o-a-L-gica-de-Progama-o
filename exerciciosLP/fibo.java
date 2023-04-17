@@ -4,7 +4,7 @@ public class fibo {
         
         int anterior=0, posicao=1, aux;
   
-        for (;posicao<1000;) {
+        while (posicao<1000) {
             System.out.print(posicao+", ");
             aux=posicao;
             posicao += anterior; 
