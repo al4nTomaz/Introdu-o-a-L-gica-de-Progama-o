@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "provaRevisado",
+            "request": "launch",
+            "mainClass": "aulas.aula0905.provaWg.provaRevisado",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_3155d62c"
+        },
+        {
+            "type": "java",
             "name": "provaCopy",
             "request": "launch",
             "mainClass": "aulas.aula0905.provaWg.provaCopy",

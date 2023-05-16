@@ -1,6 +1,6 @@
 package aulas.aula0905.provaWg;
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class provaCopy {
 
