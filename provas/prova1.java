@@ -1,8 +1,8 @@
-package aulas.aula1104;
+package provas;
 
 import java.util.Scanner;
 
-public class prova {
+public class prova1 {
     public static void main(String[] args) {
 
         Scanner entrada = new Scanner(System.in);

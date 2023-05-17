@@ -1,8 +1,8 @@
-package aulas.aula0905.provaWg;
+package provas.provaWg;
 
 import java.util.Scanner;
 
-public class provaRevisado {
+public class prova {
 
     public static final int N = 20;
 
@@ -29,32 +29,43 @@ public class provaRevisado {
 
         e.close();
 
-        int contZero = 0, contUm = 0;
+        int contZero = 0, contUm = 0, verifica=vetor1[0];
+        boolean controle=false;
 
-        for (i=0; i<N; i++){
-            if(vetor1[i]==0){
-                contZero++;
-                if(contUm!=0){
-                    vetor2[j] = contUm;
-                    contUm = 0;
-                    j++;
+        i = 0;
+        do{
+            verifica = vetor1[i];
+            while (!controle){
+                if (i<N) {                        
+                    if(vetor1[i]==verifica){
+                        if(verifica==0){
+                            contZero++;
+                        }else{
+                            contUm++;
+                        }
+                        i++;
+                    } else{
+                        controle = !controle;                   
+                    }
+                } else {
+                    break;
                 }
+            }
+
+            if(verifica==0){
+                vetor2[j] = contZero;
+                contZero=0;
+                j++;
+                
             } else{
-                contUm++;           
-                if(contZero!=0){
-                    vetor2[j] = contZero;
-                    contZero=0;
-                    j++;
-                }
-            }   
-        }
+                vetor2[j] = contUm;
+                contUm = 0;
+                j++;
+            }
+            controle = !controle;
 
-        if(contUm!=0){
-            vetor2[j] = contUm;
-        }else if(contZero!=0){
-            vetor2[j] = contZero;
-        }
-      
+        } while(i<N);
+        
         System.out.print("\n\nVetor1: |");
         int cont=1;
         for (i = 0, j=0; i < N; i++) {

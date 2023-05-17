@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ex5",
+            "request": "launch",
+            "mainClass": "aulas.prova1605.ex5",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_3155d62c"
+        },
+        {
+            "type": "java",
+            "name": "ex4",
+            "request": "launch",
+            "mainClass": "aulas.prova1605.ex4",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_3155d62c"
+        },
+        {
+            "type": "java",
+            "name": "ex3",
+            "request": "launch",
+            "mainClass": "aulas.prova1605.ex3",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_3155d62c"
+        },
+        {
+            "type": "java",
+            "name": "ex1",
+            "request": "launch",
+            "mainClass": "aulas.prova1605.ex1",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_3155d62c"
+        },
+        {
+            "type": "java",
+            "name": "ex2",
+            "request": "launch",
+            "mainClass": "aulas.prova1605.ex2",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_3155d62c"
+        },
+        {
+            "type": "java",
             "name": "ex1",
             "request": "launch",
             "mainClass": "aulas.prova1605.ex1",

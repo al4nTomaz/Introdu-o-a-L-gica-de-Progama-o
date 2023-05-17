@@ -1,4 +1,4 @@
-package aulas.prova1605;
+package provas.prova3;
 
 public class ex1 {
 

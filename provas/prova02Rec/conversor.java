@@ -1,3 +1,5 @@
+package provas.prova02Rec;
+
 import java.util.Scanner;
 
 public class conversor {
