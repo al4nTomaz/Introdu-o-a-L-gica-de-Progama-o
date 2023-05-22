@@ -1,4 +1,4 @@
-package provas;
+package provas.prova01;
 
 import java.util.Scanner;
 

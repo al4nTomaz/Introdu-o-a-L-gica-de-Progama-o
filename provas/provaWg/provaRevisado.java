@@ -10,22 +10,25 @@ public class provaRevisado {
 
         Scanner e = new Scanner(System.in);
         
-        // int vetor1[] = new int[N];
-        int vetor1[] = {0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+        int vetor1[] = new int[N];
+        // int vetor1[] = {0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1};
         int vetor2[] = new int[N];
 
         int i = 0, j=0;
 
-        // System.out.println("Informe 20 valores para o vetor: ");
-        // int num;
-        // do {
-        //     System.out.print("-> ");
-        //     num = e.nextInt();
-        //     if (num == 0 || num == 1) {
-        //         vetor1[i]=num;
-        //         i++;
-        //     }
-        // } while (i<N);
+        System.out.println("Informe 20 valores para o vetor: ");
+        int num;
+        do {
+            System.out.print("[");
+            System.out.print((i+1)+"]-> ");
+            num = e.nextInt();
+            if (num == 0 || num == 1) {
+                vetor1[i]=num;
+                i++;
+            }else{
+                System.out.println("ERRO! O valortem de ser 0 ou valor 1.");
+            }
+        } while (i<N);
 
         e.close();
 
