@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ex3",
+            "request": "launch",
+            "mainClass": "provas.prova3.resolução.ex3",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "provaRevisado",
+            "request": "launch",
+            "mainClass": "provas.provaWg.provaRevisado",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "provaCopy",
+            "request": "launch",
+            "mainClass": "provas.provaWg.provaCopy",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "vetores",
+            "request": "launch",
+            "mainClass": "aulas.aula2305.vetores",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "ex4",
+            "request": "launch",
+            "mainClass": "provas.prova3.resolução.ex4",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "ex2",
+            "request": "launch",
+            "mainClass": "provas.prova3.resolução.ex2",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "ex2",
+            "request": "launch",
+            "mainClass": "provas.prova3.ex2",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "ex1",
+            "request": "launch",
+            "mainClass": "provas.prova3.resolução.ex1",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "ex1",
+            "request": "launch",
+            "mainClass": "provas.prova3.ex1",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
             "name": "provaRevisado",
             "request": "launch",
             "mainClass": "provas.provaWg.provaRevisado",
