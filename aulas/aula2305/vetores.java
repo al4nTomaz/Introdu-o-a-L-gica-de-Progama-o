@@ -3,6 +3,8 @@ package aulas.aula2305;
 import java.util.Scanner;
 
 public class vetores {
+
+    static final int N = 10;
     public static void main(String[] args) {
         
         Scanner e = new Scanner(System.in);
@@ -18,7 +20,7 @@ public class vetores {
         // vetDouble[0] = 10.75;
         // vetDouble[1] = vetInt[0] + vetDouble[0];
 
-        int vet [] = new int[10];
+        int vet [] = new int[N];
         
         int i;
         for (i = 0; i < vet.length; i++) {
@@ -28,6 +30,10 @@ public class vetores {
 
         for (i = 0; i < vet.length; i++) {
             System.out.println(vet[i]);
+        }
+
+        for (int v : vet) {
+            System.out.println(v);
         }
 
         e.close();

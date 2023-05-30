@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "VetorRandom",
+            "request": "launch",
+            "mainClass": "aulas.aula3005.VetorRandom",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "VetorInversoMesmo",
+            "request": "launch",
+            "mainClass": "aulas.aula3005.VetorInversoMesmo",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "VetorInversoOutro",
+            "request": "launch",
+            "mainClass": "aulas.aula3005.VetorInversoOutro",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "VetorInverso",
+            "request": "launch",
+            "mainClass": "aulas.aula3005.VetorInverso",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
             "name": "ex3",
             "request": "launch",
             "mainClass": "provas.prova3.resolução.ex3",
