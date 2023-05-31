@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ep19",
+            "request": "launch",
+            "mainClass": "ep19",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_fb0564d9"
+        },
+        {
+            "type": "java",
+            "name": "ep18",
+            "request": "launch",
+            "mainClass": "ep18",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_fb0564d9"
+        },
+        {
+            "type": "java",
+            "name": "ep17",
+            "request": "launch",
+            "mainClass": "ep17",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_fb0564d9"
+        },
+        {
+            "type": "java",
+            "name": "ep16",
+            "request": "launch",
+            "mainClass": "ep16",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_fb0564d9"
+        },
+        {
+            "type": "java",
+            "name": "ep15",
+            "request": "launch",
+            "mainClass": "ep15",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_fb0564d9"
+        },
+        {
+            "type": "java",
+            "name": "VetorInversoMesmo",
+            "request": "launch",
+            "mainClass": "aulas.aula3005.VetorInversoMesmo",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_fb0564d9"
+        },
+        {
+            "type": "java",
+            "name": "VetorInverso",
+            "request": "launch",
+            "mainClass": "aulas.aula3005.VetorInverso",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_fb0564d9"
+        },
+        {
+            "type": "java",
             "name": "VetorRandom",
             "request": "launch",
             "mainClass": "aulas.aula3005.VetorRandom",
