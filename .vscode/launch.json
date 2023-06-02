@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ep20",
+            "request": "launch",
+            "mainClass": "ep20",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_fb0564d9"
+        },
+        {
+            "type": "java",
             "name": "ep19",
             "request": "launch",
             "mainClass": "ep19",
