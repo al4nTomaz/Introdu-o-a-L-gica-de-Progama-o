@@ -10,5 +10,6 @@ public class fibo {
             posicao += anterior; 
             anterior = aux;
         }
+        System.out.println();
     }
 }
