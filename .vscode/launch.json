@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Sorteio",
+            "request": "launch",
+            "mainClass": "aulas.aula0606.Sorteio",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "ep21",
+            "request": "launch",
+            "mainClass": "ep21",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
             "name": "ep21",
             "request": "launch",
             "mainClass": "ep21",

@@ -1,0 +1,3 @@
+dois vetores prenchidos pelo usuario, de forma ordenada; vet1[5] vet2[8]; 
+valores maiores que 0 e não repetidos no mesmo vetor
+respeitando a ordem no vetor concatenado; 
