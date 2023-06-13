@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Prova",
+            "request": "launch",
+            "mainClass": "provas.prova04.Prova",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "primo",
+            "request": "launch",
+            "mainClass": "aulas.aula0905.primo",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "Ex1",
+            "request": "launch",
+            "mainClass": "provas.prova04.Ex1",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "VetorConcat",
+            "request": "launch",
+            "mainClass": "aulas.aula0606.VetorConcat",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
             "name": "Sorteio",
             "request": "launch",
             "mainClass": "aulas.aula0606.Sorteio",
