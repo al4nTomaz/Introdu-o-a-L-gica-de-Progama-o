@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ProvaRevi",
+            "request": "launch",
+            "mainClass": "provas.prova04.ProvaRevi",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
             "name": "Prova",
             "request": "launch",
             "mainClass": "provas.prova04.Prova",

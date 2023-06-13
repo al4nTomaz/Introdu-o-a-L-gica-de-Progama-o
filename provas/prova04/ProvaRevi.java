@@ -2,7 +2,7 @@ package provas.prova04;
 
 import java.util.Random;
 
-public class Prova {
+public class ProvaRevi {
     
     public static void main(String[] args) {
 
@@ -66,6 +66,7 @@ public class Prova {
 //=======================EX2=============================
         i = 0;
         j = 0;
+
         while (i < vetorC.length) {
             if (j < vetorA.length) {
                 vetorC[i] = vetorA[j];
@@ -77,7 +78,17 @@ public class Prova {
             }
             j++;
             i++;
-        }          
+        }     
+        
+        for (i = 0; i < vetorC.length; i++){
+            for(j = 0; j < vetorC.length; j++){
+                if (vetorC[i] < vetorC[j]) {
+                    aux = vetorC[i];
+                    vetorC[i] = vetorC[j];
+                    vetorC[j] = aux;
+                }
+            }
+        }
 
         System.out.print("VetorC: | ");
         for (i = 0; i < vetorC.length; i++) {
