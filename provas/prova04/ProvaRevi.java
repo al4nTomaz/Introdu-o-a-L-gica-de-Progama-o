@@ -28,6 +28,7 @@ public class ProvaRevi {
 
 //=======================EX1==============================
         i = 0;
+
         vetorA[i] = rand.nextInt(1, 6);
         i++;
 
@@ -42,7 +43,6 @@ public class ProvaRevi {
         }
 
         i = 0;
-
         vetorB[i] = rand.nextInt(1, 6);
         i++;
 
@@ -60,22 +60,19 @@ public class ProvaRevi {
         
         System.out.print("VetorA: | ");
         for ( i = 0; i < vetorA.length; i++) {
-            System.out.printf("%2d | ", vetorA[i]);
-            
+            System.out.printf("%2d | ", vetorA[i]);            
         }
 
         System.out.println();
         
         System.out.print("VetorB: | ");
         for ( i = 0; i < vetorB.length; i++) {
-            System.out.printf("%2d | ", vetorB[i]);
-            
+            System.out.printf("%2d | ", vetorB[i]);            
         }
         System.out.println();
 //=======================================================
 
 //=======================EX2=============================
-
         for (i = 0, j = 0; i < vetA.length; i++) {
             if (vetorA[i] % 2 == 0){
                 contA++;
@@ -127,8 +124,6 @@ public class ProvaRevi {
             i++;
         }
 
-        contA = 0;
-        contB = 0;
         for (i = 0, j = 0; i < vetA.length; i++) {
             if (vetorA[i] % 2 != 0){
                 contA++;
@@ -186,7 +181,6 @@ public class ProvaRevi {
 
 //=======================EX3=============================
         i = 0;
-        j = 2;
         System.out.print("Números Primos no VetorC: | ");
         while (i < vetorC.length) {
             for (j = 2; j < vetorC[i]; j++){
