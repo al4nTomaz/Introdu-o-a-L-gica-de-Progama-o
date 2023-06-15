@@ -9,6 +9,13 @@
             "name": "ProvaRevi",
             "request": "launch",
             "mainClass": "provas.prova04.ProvaRevi",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_6996a25b"
+        },
+        {
+            "type": "java",
+            "name": "ProvaRevi",
+            "request": "launch",
+            "mainClass": "provas.prova04.ProvaRevi",
             "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
         },
         {

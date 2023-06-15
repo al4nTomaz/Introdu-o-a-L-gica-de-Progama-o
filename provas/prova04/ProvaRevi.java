@@ -16,7 +16,7 @@ public class ProvaRevi {
         int vetA[] = new int[4];
         int vetB[] = new int[6];
 
-        int i = 0, j = 0, k = 0, aux;
+        int i = 0, j = 0, k = 0, aux, contA = 0, contB = 0;
         boolean primo = true;
         
         for (i = 0; i < vetB.length; i++) {
@@ -28,7 +28,7 @@ public class ProvaRevi {
 
 //=======================EX1==============================
         i = 0;
-        vetorA[i] = rand.nextInt(1, 51);
+        vetorA[i] = rand.nextInt(1, 6);
         i++;
 
         while (i < vetorA.length) {
@@ -43,7 +43,7 @@ public class ProvaRevi {
 
         i = 0;
 
-        vetorB[i] = rand.nextInt(1, 51);
+        vetorB[i] = rand.nextInt(1, 6);
         i++;
 
         while (i < vetorB.length) {
@@ -76,85 +76,109 @@ public class ProvaRevi {
 
 //=======================EX2=============================
 
-        System.out.println();
-        for (i = 0; i < vetA.length; i++) {
+        for (i = 0, j = 0; i < vetA.length; i++) {
             if (vetorA[i] % 2 == 0){
-                vetA[i] = vetorA[i]; 
-                System.out.println(vetA[i]);
+                contA++;
+                vetA[j] = vetorA[i]; 
+                j++;
             }
         }
 
-        System.out.println();
-        for (i = 0; i < vetB.length; i++) {
+        for (i = 0, j = 0; i < vetB.length; i++) {
             if (vetorB[i] % 2 == 0){
-                vetB[i] = vetorB[i]; 
-                System.out.println(vetB[i]);
+                contB++;
+                vetB[j] = vetorB[i]; 
+                j++;
             }
         }
-        System.out.println("imprimimdo");
 
-        for (i = 0; i < vetB.length; i++) {
-            if (i < vetA.length){
-                if (vetA[i] < vetB[i]){
-                    System.out.println(vetA[i]);
-                    vetA[i] = -1;
+        i = 0;
+        j = 0;
+        k = 0;
+        while (contA != 0 || contB != 0) {
+            if (i < vetA.length) {                
+                if (contA != 0) {
+                    if (j < vetB.length) {
+                        if (vetA[i] <= vetB[j]) {
+                            vetorC[k] = vetA[i];
+                            k++;
+                            contA--;
+                            vetA[i] = -1;
+                            i++;
+                            continue;
+                        }
+                    }
+                }
+               
+            }if (j < vetB.length) {
+                if (vetB[j] != -1) {
+                    vetorC[k] = vetB[j];
+                    k++;
+                    contB--;
+                    vetB[j] = -1;
+                    j++;
                     continue;
                 }
-                System.out.println(vetB[i]);
-            }else{
-                System.out.println(vetB[i]);
+            }
+            vetorC[k] = vetA[i];
+            k++;
+            contA--;
+            vetA[i] = -1;
+            i++;
+        }
+
+        contA = 0;
+        contB = 0;
+        for (i = 0, j = 0; i < vetA.length; i++) {
+            if (vetorA[i] % 2 != 0){
+                contA++;
+                vetA[j] = vetorA[i]; 
+                j++;
             }
         }
 
-        // i = 0;
-        // j = 0;
-        // while (i < vetorC.length) {
-        //     if (j < vetorA.length) {
-        //         vetorC[i] = vetorA[j];
-        //         i++;
-        //     }
-            
-        //     if (j < vetorB.length) {
-        //         vetorC[i] = vetorB[j];
-        //     }
-        //     j++;
-        //     i++;
-        // }
-        
-        for (i = 0; i < vetB.length; i++) {
-            if (i < vetA.length) {
-                vetA[i] = -1;
+        for (i = 0, j = 0; i < vetB.length; i++) {
+            if (vetorB[i] % 2 != 0){
+                contB++;
+                vetB[j] = vetorB[i]; 
+                j++;
             }
-            vetB[i] = -1;
         }
 
-        // for (i = 0; i < vetA.length; i++) {
-        //     if (vetorA[i] % 2 != 0){
-        //         vetA[i] = vetorA[i]; 
-        //         // System.out.println(vetA[i]);
-        //     }
-        // }
-
-        // for (i = 0; i < vetB.length; i++) {
-        //     if (vetorB[i] % 2 != 0){
-        //         vetB[i] = vetorB[i]; 
-        //         // System.out.println(vetB[i]);
-        //     }
-        // }
-        
-        // for (i = 0; i < vetorC.length; i++){
-        //     for(j = 0; j < vetorC.length; j++){
-        //         if (vetorC[i] < vetorC[j]) {
-        //             aux = vetorC[i];
-        //             vetorC[i] = vetorC[j];
-        //             vetorC[j] = aux;
-        //         }
-        //     }
-        // }
+        i = 0;
+        j = 0;
+        while (contA != 0 || contB != 0) {
+            if (contA != 0) {
+                if (j < vetB.length) {
+                    if (vetA[i] <= vetB[j]) {
+                        vetorC[k] = vetA[i];
+                        k++;
+                        contA--;
+                        vetA[i] = -1;
+                        i++;
+                        continue;
+                    }
+                }
+            }
+            if (j < vetB.length) {
+                if (vetB[j] != -1) {
+                    vetorC[k] = vetB[j];
+                    k++;
+                    contB--;
+                    vetB[j] = -1;
+                    j++;
+                    continue;
+                }
+            }
+            vetorC[k] = vetA[i];
+            k++;
+            contA--;
+            vetA[i] = -1;
+            i++;
+        }
 
         System.out.print("VetorC: | ");
-        for (i = 0; i < vetorC.length; i++) {
-            
+        for (i = 0; i < vetorC.length; i++) {          
             System.out.printf("%2d | ", vetorC[i]);
         }
         System.out.println();

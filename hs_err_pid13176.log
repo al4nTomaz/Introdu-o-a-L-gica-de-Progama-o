@@ -1,0 +1,521 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f8c3a218543, pid=13176, tid=13177
+#
+# JRE version:  (17.0.7+7) (build )
+# Java VM: OpenJDK 64-Bit Server VM (17.0.7+7, mixed mode, tiered, compressed oops, compressed class ptrs, g1 gc, linux-amd64)
+# Problematic frame:
+# V  [libjvm.so+0x418543]  Assembler::addq(Address, int)+0x23
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/share/apport/apport -p%p -s%s -c%c -d%d -P%P -u%u -g%g -- %E" (or dumping to /home/alan/Documentos/Projetos/java/Introdu-o-a-L-gica-de-Progama-o/core.13176)
+#
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dapplication.home=/home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64 -Xms8m -Djdk.module.main=jdk.jcmd jdk.jcmd/sun.tools.jcmd.JCmd 10078 VM.uptime
+
+Host: AMD Athlon 3000G with Radeon Vega Graphics, 4 cores, 5G, Ubuntu 22.04.2 LTS
+Time: Wed Jun 14 16:18:29 2023 -03 elapsed time: 0.041659 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f8c34025b70):  JavaThread "Unknown thread" [_thread_in_vm, id=13177, stack(0x00007f8c39c19000,0x00007f8c39d19000)]
+
+Stack: [0x00007f8c39c19000,0x00007f8c39d19000],  sp=0x00007f8c39d0e714,  free space=981k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x418543]  Assembler::addq(Address, int)+0x23
+
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x0000000000000012
+
+Registers:
+RAX=0x0000000000000002, RBX=0x00007f8c39d17290, RCX=0x00007f8c00000000, RDX=0x0000000000000000
+RSP=0x00007f8c39d0e714, RBP=0x00007f8c39d0e794, RSI=0x0000000000000001, RDI=0x00007f8c39d17290
+R8 =0x00007f8c3b138a00, R9 =0x00007f8c3b014780, R10=0x0000000000000000, R11=0x00007f8c00000000
+R12=0x0000000000000001, R13=0x0000000000000000, R14=0x00007f8c39d17290, R15=0xffffffffffffffff
+RIP=0x00007f8c3a218543, EFLAGS=0x0000000000010206, CSGSFS=0x002b000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007f8c39d0e714)
+0x00007f8c39d0e710:   0000000000000000 0000000000000000
+0x00007f8c39d0e720:   0000000000000000 0000000000000000
+0x00007f8c39d0e730:   0000000000000000 0000000000000000
+0x00007f8c39d0e740:   0000000000000000 0000000000000000
+0x00007f8c39d0e750:   0000000000000000 
+
+Instructions: (pc=0x00007f8c3a218543)
+0x00007f8c3a218443:   07 48 8d 45 c8 48 83 c7 02 c6 47 ff 13 49 89 78
+0x00007f8c3a218453:   10 48 89 df 50 0f 11 4d b0 44 8b 4d bc 44 8b 45
+0x00007f8c3a218463:   b8 0f 11 45 a0 0f 11 55 c0 0f 11 5d d0 0f 11 65
+0x00007f8c3a218473:   e0 e8 17 ad fc ff 48 8b 43 08 48 c7 40 08 00 00
+0x00007f8c3a218483:   00 00 58 48 8b 5d f8 5a c9 c3 90 66 90 48 8b 47
+0x00007f8c3a218493:   08 41 89 d0 48 8b 48 10 4c 8d 49 01 83 fe 07 7f
+0x00007f8c3a2184a3:   1c c1 e6 03 83 ce c0 83 fa 07 7f 61 c6 01 48 4c
+0x00007f8c3a2184b3:   89 48 10 eb 22 0f 1f 84 00 00 00 00 00 83 fa 07
+0x00007f8c3a2184c3:   7e 33 c6 01 4d 8d 34 f5 c0 ff ff ff 4c 89 48 10
+0x00007f8c3a2184d3:   83 ce c0 44 8d 42 f8 48 8b 57 08 44 09 c6 48 8b
+0x00007f8c3a2184e3:   42 10 c6 00 13 48 83 c0 02 40 88 70 ff 48 89 42
+0x00007f8c3a2184f3:   10 c3 0f 1f 00 8d 34 f5 c0 ff ff ff c6 01 4c 83
+0x00007f8c3a218503:   ce c0 4c 89 48 10 eb cf 0f 1f 44 00 00 c6 01 49
+0x00007f8c3a218513:   4c 89 48 10 eb bd 90 66 0f 1f 44 00 00 55 48 89
+0x00007f8c3a218523:   e5 41 57 41 56 41 55 41 54 41 89 f4 53 48 89 fb
+0x00007f8c3a218533:   48 83 ec 58 48 8b 47 08 48 8b 55 10 48 8b 4d 18
+0x00007f8c3a218543:   48 8b 70 10 48 89 70 08 48 8d 05 6e 81 be 00 48
+0x00007f8c3a218553:   8b 30 b8 48 00 00 00 48 83 fa 0f 77 09 83 fa 07
+0x00007f8c3a218563:   0f 9f c0 83 c0 48 48 83 f9 0f 77 0a 83 f9 07 40
+0x00007f8c3a218573:   0f 9f c7 8d 04 78 4c 8b 43 08 83 fe 07 8d 78 04
+0x00007f8c3a218583:   4c 8b 75 20 0f 4f c7 44 8b 4d 2c 44 0f b6 6d 30
+0x00007f8c3a218593:   45 8d 94 24 80 00 00 00 49 8b 78 10 f3 0f 7e 55
+0x00007f8c3a2185a3:   40 f3 0f 7e 4d 50 4c 8b 5d 58 88 07 48 83 c7 01
+0x00007f8c3a2185b3:   41 81 fa ff 00 00 00 48 8b 45 48 49 89 78 10 4c
+0x00007f8c3a2185c3:   8b 7b 08 44 8b 45 28 48 8b 7d 38 4d 8b 57 10 0f
+0x00007f8c3a2185d3:   87 98 00 00 00 66 48 0f 6e c2 66 48 0f 6e d9 41
+0x00007f8c3a2185e3:   c6 02 83 49 83 c2 01 66 0f 6c c3 4d 89 57 10 66
+0x00007f8c3a2185f3:   41 0f 6e e1 0f 29 45 80 66 41 0f 6e c0 66 0f 62
+0x00007f8c3a218603:   c4 6a 01 66 0f d6 45 98 66 48 0f 6e c7 48 89 df
+0x00007f8c3a218613:   66 0f 6c c2 4c 89 75 90 0f 11 45 a8 66 48 0f 6e
+0x00007f8c3a218623:   c0 48 8d 45 a8 50 66 0f 6c c1 44 88 6d a0 4c 89
+0x00007f8c3a218633:   5d c8 0f 11 45 b8 e8 d2 ae fc ff 48 8b 53 08 48 
+
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007f8c3b13c9c0, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x00007f8c34070830 GCTaskThread "GC Thread#0" [stack: 0x00007f8c38cab000,0x00007f8c38dab000] [id=13178]
+  0x00007f8c3407d510 ConcurrentGCThread "G1 Main Marker" [stack: 0x00007f8c38ba9000,0x00007f8c38ca9000] [id=13179]
+  0x00007f8c3407e470 ConcurrentGCThread "G1 Conc#0" [stack: 0x00007f8c38aa7000,0x00007f8c38ba7000] [id=13180]
+  0x00007f8c34095ae0 ConcurrentGCThread "G1 Refine#0" [stack: 0x00007f8c385a1000,0x00007f8c386a1000] [id=13181]
+  0x00007f8c340969d0 ConcurrentGCThread "G1 Service" [stack: 0x00007f8c3849f000,0x00007f8c3859f000] [id=13182]
+
+=>0x00007f8c34025b70 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=13177, stack(0x00007f8c39c19000,0x00007f8c39d19000)]
+
+Threads with active compile tasks:
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap address: 0x00000000a4800000, size: 1464 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) not mapped
+Compressed class space mapped at: 0x0000000100000000-0x0000000140000000, reserved size: 1073741824
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3, Narrow klass range: 0x140000000
+
+GC Precious Log:
+ CPUs: 4 total, 4 available
+ Memory: 5851M
+ Large Page Support: Disabled
+ NUMA Support: Disabled
+ Compressed Oops: Enabled (32-bit)
+ Heap Region Size: 1M
+ Heap Min Capacity: 8M
+ Heap Initial Capacity: 8M
+ Heap Max Capacity: 1464M
+ Pre-touch: Disabled
+ Parallel Workers: 4
+ Concurrent Workers: 1
+ Concurrent Refinement Workers: 4
+ Periodic GC: Disabled
+
+Heap:
+ garbage-first heap   total 8192K, used 0K [0x00000000a4800000, 0x0000000100000000)
+  region size 1024K, 1 young (1024K), 0 survivors (0K)
+ Metaspace       used 1118K, committed 1152K, reserved 1114112K
+  class space    used 95K, committed 128K, reserved 1048576K
+
+Heap Regions: E=young(eden), S=young(survivor), O=old, HS=humongous(starts), HC=humongous(continues), CS=collection set, F=free, OA=open archive, CA=closed archive, TAMS=top-at-mark-start (previous, next)
+|   0|0x00000000a4800000, 0x00000000a4800000, 0x00000000a4900000|  0%| F|  |TAMS 0x00000000a4800000, 0x00000000a4800000| Untracked 
+|   1|0x00000000a4900000, 0x00000000a4900000, 0x00000000a4a00000|  0%| F|  |TAMS 0x00000000a4900000, 0x00000000a4900000| Untracked 
+|   2|0x00000000a4a00000, 0x00000000a4a00000, 0x00000000a4b00000|  0%| F|  |TAMS 0x00000000a4a00000, 0x00000000a4a00000| Untracked 
+|   3|0x00000000a4b00000, 0x00000000a4b00000, 0x00000000a4c00000|  0%| F|  |TAMS 0x00000000a4b00000, 0x00000000a4b00000| Untracked 
+|   4|0x00000000a4c00000, 0x00000000a4c00000, 0x00000000a4d00000|  0%| F|  |TAMS 0x00000000a4c00000, 0x00000000a4c00000| Untracked 
+|   5|0x00000000a4d00000, 0x00000000a4d00000, 0x00000000a4e00000|  0%| F|  |TAMS 0x00000000a4d00000, 0x00000000a4d00000| Untracked 
+|   6|0x00000000a4e00000, 0x00000000a4e00000, 0x00000000a4f00000|  0%| F|  |TAMS 0x00000000a4e00000, 0x00000000a4e00000| Untracked 
+|   7|0x00000000a4f00000, 0x00000000a4f0f630, 0x00000000a5000000|  6%| E|  |TAMS 0x00000000a4f00000, 0x00000000a4f00000| Complete 
+
+Card table byte_map: [0x00007f8c39087000,0x00007f8c39363000] _byte_map_base: 0x00007f8c38b63000
+
+Marking Bits (Prev, Next): (CMBitMap*) 0x00007f8c340712b0, (CMBitMap*) 0x00007f8c340712f0
+ Prev Bits: [0x00007f8c20b20000, 0x00007f8c22200000)
+ Next Bits: [0x00007f8c1f440000, 0x00007f8c20b20000)
+
+GC Heap History (0 events):
+No events
+
+Dll operation events (1 events):
+Event: 0.002 Loaded shared library /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libjava.so
+
+Deoptimization events (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Events (20 events):
+Event: 0.030 loading class java/lang/Short
+Event: 0.030 loading class java/lang/Short done
+Event: 0.030 loading class java/lang/Integer
+Event: 0.030 loading class java/lang/Integer done
+Event: 0.030 loading class java/lang/Long
+Event: 0.031 loading class java/lang/Long done
+Event: 0.031 loading class java/util/Iterator
+Event: 0.031 loading class java/util/Iterator done
+Event: 0.031 loading class java/lang/reflect/RecordComponent
+Event: 0.031 loading class java/lang/reflect/RecordComponent done
+Event: 0.031 loading class jdk/internal/vm/vector/VectorSupport
+Event: 0.031 loading class jdk/internal/vm/vector/VectorSupport done
+Event: 0.031 loading class jdk/internal/vm/vector/VectorSupport$VectorPayload
+Event: 0.031 loading class jdk/internal/vm/vector/VectorSupport$VectorPayload done
+Event: 0.031 loading class jdk/internal/vm/vector/VectorSupport$Vector
+Event: 0.031 loading class jdk/internal/vm/vector/VectorSupport$Vector done
+Event: 0.031 loading class jdk/internal/vm/vector/VectorSupport$VectorMask
+Event: 0.031 loading class jdk/internal/vm/vector/VectorSupport$VectorMask done
+Event: 0.031 loading class jdk/internal/vm/vector/VectorSupport$VectorShuffle
+Event: 0.031 loading class jdk/internal/vm/vector/VectorSupport$VectorShuffle done
+
+
+Dynamic libraries:
+a4800000-a5000000 rw-p 00000000 00:00 0 
+a5000000-100040000 ---p 00000000 00:00 0 
+100040000-100060000 rw-p 00000000 00:00 0 
+100060000-140000000 ---p 00000000 00:00 0 
+5586a6e4b000-5586a6e4c000 r--p 00000000 103:05 1857100                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/bin/jcmd
+5586a6e4c000-5586a6e4d000 r-xp 00001000 103:05 1857100                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/bin/jcmd
+5586a6e4d000-5586a6e4e000 r--p 00002000 103:05 1857100                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/bin/jcmd
+5586a6e4e000-5586a6e4f000 r--p 00002000 103:05 1857100                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/bin/jcmd
+5586a6e4f000-5586a6e50000 rw-p 00003000 103:05 1857100                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/bin/jcmd
+5586a7b73000-5586a7bbb000 rw-p 00000000 00:00 0                          [heap]
+7f8c04000000-7f8c04100000 rw-p 00000000 00:00 0 
+7f8c04100000-7f8c08000000 ---p 00000000 00:00 0 
+7f8c08000000-7f8c08021000 rw-p 00000000 00:00 0 
+7f8c08021000-7f8c0c000000 ---p 00000000 00:00 0 
+7f8c0c000000-7f8c0c021000 rw-p 00000000 00:00 0 
+7f8c0c021000-7f8c10000000 ---p 00000000 00:00 0 
+7f8c10000000-7f8c10021000 rw-p 00000000 00:00 0 
+7f8c10021000-7f8c14000000 ---p 00000000 00:00 0 
+7f8c14000000-7f8c14021000 rw-p 00000000 00:00 0 
+7f8c14021000-7f8c18000000 ---p 00000000 00:00 0 
+7f8c18000000-7f8c18021000 rw-p 00000000 00:00 0 
+7f8c18021000-7f8c1c000000 ---p 00000000 00:00 0 
+7f8c1d1a9000-7f8c1f460000 rw-p 00000000 00:00 0 
+7f8c1f460000-7f8c20b20000 ---p 00000000 00:00 0 
+7f8c20b20000-7f8c20b40000 rw-p 00000000 00:00 0 
+7f8c20b40000-7f8c22200000 ---p 00000000 00:00 0 
+7f8c22200000-7f8c22470000 rwxp 00000000 00:00 0 
+7f8c22470000-7f8c29737000 ---p 00000000 00:00 0 
+7f8c29737000-7f8c299a7000 rwxp 00000000 00:00 0 
+7f8c299a7000-7f8c29cc8000 ---p 00000000 00:00 0 
+7f8c29cc8000-7f8c29f38000 rwxp 00000000 00:00 0 
+7f8c29f38000-7f8c31200000 ---p 00000000 00:00 0 
+7f8c31200000-7f8c33e16000 r--s 00000000 103:05 1858196                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/modules
+7f8c34000000-7f8c3410c000 rw-p 00000000 00:00 0 
+7f8c3410c000-7f8c38000000 ---p 00000000 00:00 0 
+7f8c3826a000-7f8c3849d000 rw-p 00000000 00:00 0 
+7f8c3849d000-7f8c3849e000 ---p 00000000 00:00 0 
+7f8c3849e000-7f8c3859f000 rw-p 00000000 00:00 0 
+7f8c3859f000-7f8c385a0000 ---p 00000000 00:00 0 
+7f8c385a0000-7f8c38aa5000 rw-p 00000000 00:00 0 
+7f8c38aa5000-7f8c38aa6000 ---p 00000000 00:00 0 
+7f8c38aa6000-7f8c38ba7000 rw-p 00000000 00:00 0 
+7f8c38ba7000-7f8c38ba8000 ---p 00000000 00:00 0 
+7f8c38ba8000-7f8c38ca9000 rw-p 00000000 00:00 0 
+7f8c38ca9000-7f8c38caa000 ---p 00000000 00:00 0 
+7f8c38caa000-7f8c38daf000 rw-p 00000000 00:00 0 
+7f8c38daf000-7f8c39087000 ---p 00000000 00:00 0 
+7f8c39087000-7f8c3908b000 rw-p 00000000 00:00 0 
+7f8c3908b000-7f8c39363000 ---p 00000000 00:00 0 
+7f8c39363000-7f8c39367000 rw-p 00000000 00:00 0 
+7f8c39367000-7f8c3963f000 ---p 00000000 00:00 0 
+7f8c3963f000-7f8c39a48000 rw-p 00000000 00:00 0 
+7f8c39a48000-7f8c39b2e000 ---p 00000000 00:00 0 
+7f8c39b2e000-7f8c39b33000 rw-p 00000000 00:00 0 
+7f8c39b33000-7f8c39c19000 ---p 00000000 00:00 0 
+7f8c39c19000-7f8c39c1d000 ---p 00000000 00:00 0 
+7f8c39c1d000-7f8c39d19000 rw-p 00000000 00:00 0 
+7f8c39d19000-7f8c39d27000 r--p 00000000 103:05 6581020                   /usr/lib/x86_64-linux-gnu/libm.so.6
+7f8c39d27000-7f8c39da3000 r-xp 0000e000 103:05 6581020                   /usr/lib/x86_64-linux-gnu/libm.so.6
+7f8c39da3000-7f8c39dfe000 r--p 0008a000 103:05 6581020                   /usr/lib/x86_64-linux-gnu/libm.so.6
+7f8c39dfe000-7f8c39dff000 r--p 000e4000 103:05 6581020                   /usr/lib/x86_64-linux-gnu/libm.so.6
+7f8c39dff000-7f8c39e00000 rw-p 000e5000 103:05 6581020                   /usr/lib/x86_64-linux-gnu/libm.so.6
+7f8c39e00000-7f8c3a052000 r--p 00000000 103:05 1859048                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/server/libjvm.so
+7f8c3a052000-7f8c3ad72000 r-xp 00252000 103:05 1859048                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/server/libjvm.so
+7f8c3ad72000-7f8c3affe000 r--p 00f72000 103:05 1859048                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/server/libjvm.so
+7f8c3affe000-7f8c3afff000 ---p 011fe000 103:05 1859048                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/server/libjvm.so
+7f8c3afff000-7f8c3b0b8000 r--p 011fe000 103:05 1859048                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/server/libjvm.so
+7f8c3b0b8000-7f8c3b0ed000 rw-p 012b7000 103:05 1859048                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/server/libjvm.so
+7f8c3b0ed000-7f8c3b147000 rw-p 00000000 00:00 0 
+7f8c3b165000-7f8c3b1d7000 rw-p 00000000 00:00 0 
+7f8c3b1d7000-7f8c3b1e4000 r--p 00000000 103:05 1858091                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libjava.so
+7f8c3b1e4000-7f8c3b1f6000 r-xp 0000d000 103:05 1858091                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libjava.so
+7f8c3b1f6000-7f8c3b1fc000 r--p 0001f000 103:05 1858091                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libjava.so
+7f8c3b1fc000-7f8c3b1fd000 ---p 00025000 103:05 1858091                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libjava.so
+7f8c3b1fd000-7f8c3b1fe000 r--p 00025000 103:05 1858091                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libjava.so
+7f8c3b1fe000-7f8c3b1ff000 rw-p 00026000 103:05 1858091                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libjava.so
+7f8c3b1ff000-7f8c3b200000 rw-p 00000000 00:00 0 
+7f8c3b200000-7f8c3b228000 r--p 00000000 103:05 6580371                   /usr/lib/x86_64-linux-gnu/libc.so.6
+7f8c3b228000-7f8c3b3bd000 r-xp 00028000 103:05 6580371                   /usr/lib/x86_64-linux-gnu/libc.so.6
+7f8c3b3bd000-7f8c3b415000 r--p 001bd000 103:05 6580371                   /usr/lib/x86_64-linux-gnu/libc.so.6
+7f8c3b415000-7f8c3b419000 r--p 00214000 103:05 6580371                   /usr/lib/x86_64-linux-gnu/libc.so.6
+7f8c3b419000-7f8c3b41b000 rw-p 00218000 103:05 6580371                   /usr/lib/x86_64-linux-gnu/libc.so.6
+7f8c3b41b000-7f8c3b428000 rw-p 00000000 00:00 0 
+7f8c3b428000-7f8c3b42a000 r--p 00000000 103:05 1858193                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libzip.so
+7f8c3b42a000-7f8c3b42e000 r-xp 00002000 103:05 1858193                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libzip.so
+7f8c3b42e000-7f8c3b430000 r--p 00006000 103:05 1858193                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libzip.so
+7f8c3b430000-7f8c3b431000 r--p 00007000 103:05 1858193                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libzip.so
+7f8c3b431000-7f8c3b432000 rw-p 00008000 103:05 1858193                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libzip.so
+7f8c3b432000-7f8c3b437000 rw-p 00000000 00:00 0 
+7f8c3b437000-7f8c3b43e000 ---p 00000000 00:00 0 
+7f8c3b43e000-7f8c3b442000 r--p 00000000 103:05 1858114                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libjimage.so
+7f8c3b442000-7f8c3b455000 r-xp 00004000 103:05 1858114                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libjimage.so
+7f8c3b455000-7f8c3b45b000 r--p 00017000 103:05 1858114                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libjimage.so
+7f8c3b45b000-7f8c3b45d000 r--p 0001c000 103:05 1858114                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libjimage.so
+7f8c3b45d000-7f8c3b45e000 rw-p 0001e000 103:05 1858114                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libjimage.so
+7f8c3b45e000-7f8c3b45f000 r--p 00000000 103:05 6581342                   /usr/lib/x86_64-linux-gnu/librt.so.1
+7f8c3b45f000-7f8c3b460000 r-xp 00001000 103:05 6581342                   /usr/lib/x86_64-linux-gnu/librt.so.1
+7f8c3b460000-7f8c3b461000 r--p 00002000 103:05 6581342                   /usr/lib/x86_64-linux-gnu/librt.so.1
+7f8c3b461000-7f8c3b462000 r--p 00002000 103:05 6581342                   /usr/lib/x86_64-linux-gnu/librt.so.1
+7f8c3b462000-7f8c3b463000 rw-p 00003000 103:05 6581342                   /usr/lib/x86_64-linux-gnu/librt.so.1
+7f8c3b463000-7f8c3b467000 rw-p 00000000 00:00 0 
+7f8c3b467000-7f8c3b468000 r--p 00000000 103:05 6580513                   /usr/lib/x86_64-linux-gnu/libdl.so.2
+7f8c3b468000-7f8c3b469000 r-xp 00001000 103:05 6580513                   /usr/lib/x86_64-linux-gnu/libdl.so.2
+7f8c3b469000-7f8c3b46a000 r--p 00002000 103:05 6580513                   /usr/lib/x86_64-linux-gnu/libdl.so.2
+7f8c3b46a000-7f8c3b46b000 r--p 00002000 103:05 6580513                   /usr/lib/x86_64-linux-gnu/libdl.so.2
+7f8c3b46b000-7f8c3b46c000 rw-p 00003000 103:05 6580513                   /usr/lib/x86_64-linux-gnu/libdl.so.2
+7f8c3b46c000-7f8c3b46d000 r--p 00000000 103:05 6581286                   /usr/lib/x86_64-linux-gnu/libpthread.so.0
+7f8c3b46d000-7f8c3b46e000 r-xp 00001000 103:05 6581286                   /usr/lib/x86_64-linux-gnu/libpthread.so.0
+7f8c3b46e000-7f8c3b46f000 r--p 00002000 103:05 6581286                   /usr/lib/x86_64-linux-gnu/libpthread.so.0
+7f8c3b46f000-7f8c3b470000 r--p 00002000 103:05 6581286                   /usr/lib/x86_64-linux-gnu/libpthread.so.0
+7f8c3b470000-7f8c3b471000 rw-p 00003000 103:05 6581286                   /usr/lib/x86_64-linux-gnu/libpthread.so.0
+7f8c3b471000-7f8c3b474000 r--p 00000000 103:05 1858119                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libjli.so
+7f8c3b474000-7f8c3b47e000 r-xp 00003000 103:05 1858119                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libjli.so
+7f8c3b47e000-7f8c3b481000 r--p 0000d000 103:05 1858119                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libjli.so
+7f8c3b481000-7f8c3b482000 ---p 00010000 103:05 1858119                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libjli.so
+7f8c3b482000-7f8c3b483000 r--p 00010000 103:05 1858119                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libjli.so
+7f8c3b483000-7f8c3b484000 rw-p 00011000 103:05 1858119                   /home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64/lib/libjli.so
+7f8c3b484000-7f8c3b486000 r--p 00000000 103:05 6581709                   /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7f8c3b486000-7f8c3b497000 r-xp 00002000 103:05 6581709                   /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7f8c3b497000-7f8c3b49d000 r--p 00013000 103:05 6581709                   /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7f8c3b49d000-7f8c3b49e000 ---p 00019000 103:05 6581709                   /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7f8c3b49e000-7f8c3b49f000 r--p 00019000 103:05 6581709                   /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7f8c3b49f000-7f8c3b4a0000 rw-p 0001a000 103:05 6581709                   /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7f8c3b4a5000-7f8c3b4ad000 rw-s 00000000 103:05 9831190                   /tmp/hsperfdata_alan/13176
+7f8c3b4ad000-7f8c3b4ae000 ---p 00000000 00:00 0 
+7f8c3b4ae000-7f8c3b4af000 r--p 00000000 00:00 0 
+7f8c3b4af000-7f8c3b4b1000 rw-p 00000000 00:00 0 
+7f8c3b4b1000-7f8c3b4b3000 r--p 00000000 103:05 6580031                   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7f8c3b4b3000-7f8c3b4dd000 r-xp 00002000 103:05 6580031                   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7f8c3b4dd000-7f8c3b4e8000 r--p 0002c000 103:05 6580031                   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7f8c3b4e8000-7f8c3b4e9000 ---p 00000000 00:00 0 
+7f8c3b4e9000-7f8c3b4eb000 r--p 00037000 103:05 6580031                   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7f8c3b4eb000-7f8c3b4ed000 rw-p 00039000 103:05 6580031                   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7ffd6f1d6000-7ffd6f1f8000 rw-p 00000000 00:00 0                          [stack]
+7ffd6f1f9000-7ffd6f1fd000 r--p 00000000 00:00 0                          [vvar]
+7ffd6f1fd000-7ffd6f1ff000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
+
+
+VM Arguments:
+jvm_args: -Dapplication.home=/home/alan/.vscode/extensions/redhat.java-1.19.0-linux-x64/jre/17.0.7-linux-x86_64 -Xms8m -Djdk.module.main=jdk.jcmd 
+java_command: jdk.jcmd/sun.tools.jcmd.JCmd 10078 VM.uptime
+java_class_path (initial): <not set>
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 3                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 4                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 8388608                                   {product} {command line}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 1535115264                                {product} {ergonomic}
+   size_t MaxNewSize                               = 920649728                                 {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {command line}
+    uintx NonNMethodCodeHeapSize                   = 5832780                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122912730                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122912730                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 1535115264                             {manageable} {ergonomic}
+     bool UseCompressedClassPointers               = true                           {product lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+USERNAME=alan
+SHELL=/bin/bash
+DISPLAY=:0
+LANG=pt_BR.UTF-8
+TERM=xterm-256color
+
+Active Locale:
+LC_ALL=C
+LC_COLLATE=C
+LC_CTYPE=C
+LC_MESSAGES=C
+LC_MONETARY=C
+LC_NUMERIC=C
+LC_TIME=C
+
+Signal Handlers:
+   SIGSEGV: crash_handler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, unblocked
+    SIGBUS: crash_handler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, unblocked
+    SIGFPE: crash_handler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, unblocked
+   SIGPIPE: javaSignalHandler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, blocked
+   SIGXFSZ: javaSignalHandler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, blocked
+    SIGILL: crash_handler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, unblocked
+   SIGUSR2: SR_handler in libjvm.so, mask=00000000000000000000000000000000, flags=SA_RESTART|SA_SIGINFO, blocked
+    SIGHUP: SIG_DFL, mask=00000000000000000000000000000000, flags=none, blocked
+    SIGINT: SIG_DFL, mask=00000000000000000000000000000000, flags=none, blocked
+   SIGTERM: SIG_DFL, mask=00000000000000000000000000000000, flags=none, blocked
+   SIGQUIT: UserHandler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, blocked
+   SIGTRAP: crash_handler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, unblocked
+
+
+---------------  S Y S T E M  ---------------
+
+OS:
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=22.04
+DISTRIB_CODENAME=jammy
+DISTRIB_DESCRIPTION="Ubuntu 22.04.2 LTS"
+uname: Linux 5.19.0-43-generic #44~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon May 22 13:39:36 UTC 2 x86_64
+OS uptime: 0 days 3:39 hours
+libc: glibc 2.35 NPTL 2.35 
+rlimit (soft/hard): STACK 8192k/infinity , CORE 0k/infinity , NPROC 23096/23096 , NOFILE 1048576/1048576 , AS infinity/infinity , CPU infinity/infinity , DATA infinity/infinity , FSIZE infinity/infinity , MEMLOCK 749048k/749048k
+load average: 1.04 0.71 0.39
+
+/proc/meminfo:
+MemTotal:        5992412 kB
+MemFree:          196756 kB
+MemAvailable:    1205696 kB
+Buffers:           74356 kB
+Cached:          1184420 kB
+SwapCached:         4576 kB
+Active:          1011664 kB
+Inactive:        3777332 kB
+Active(anon):     349276 kB
+Inactive(anon):  3277964 kB
+Active(file):     662388 kB
+Inactive(file):   499368 kB
+Unevictable:          32 kB
+Mlocked:              32 kB
+SwapTotal:       2097148 kB
+SwapFree:        1786364 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:               216 kB
+Writeback:             0 kB
+AnonPages:       3527364 kB
+Mapped:           697448 kB
+Shmem:             99048 kB
+KReclaimable:     135784 kB
+Slab:             376692 kB
+SReclaimable:     135784 kB
+SUnreclaim:       240908 kB
+KernelStack:       18940 kB
+PageTables:        47336 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     5093352 kB
+Committed_AS:   11554760 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      310728 kB
+VmallocChunk:          0 kB
+Percpu:            38784 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      511728 kB
+DirectMap2M:     5703680 kB
+DirectMap1G:           0 kB
+
+/sys/kernel/mm/transparent_hugepage/enabled: always [madvise] never
+/sys/kernel/mm/transparent_hugepage/defrag (defrag/compaction efforts parameter): always defer defer+madvise [madvise] never
+
+Process Memory:
+Virtual Size: 3431688K (peak: 3431688K)
+Resident Set Size: 25732K (peak: 25732K) (anon: 8832K, file: 16900K, shmem: 0K)
+Swapped out: 0K
+C-Heap outstanding allocations: 14602K, retained: 805K
+glibc malloc tunables: (default)
+
+/proc/sys/kernel/threads-max (system-wide limit on the number of threads): 46192
+/proc/sys/vm/max_map_count (maximum number of memory map areas a process may have): 65530
+/proc/sys/kernel/pid_max (system-wide limit on number of process identifiers): 4194304
+
+container (cgroup) information:
+container_type: cgroupv2
+cpu_cpuset_cpus: not supported
+cpu_memory_nodes: not supported
+active_processor_count: 4
+cpu_quota: not supported
+cpu_period: not supported
+cpu_shares: not supported
+memory_limit_in_bytes: unlimited
+memory_and_swap_limit_in_bytes: unlimited
+memory_soft_limit_in_bytes: unlimited
+memory_usage_in_bytes: 2168012 k
+memory_max_usage_in_bytes: not supported
+memory_swap_current_in_bytes: 42252 k
+memory_swap_max_limit_in_bytes: unlimited
+maximum number of tasks: 6928
+current number of tasks: 332
+
+Steal ticks since vm start: 0
+Steal ticks percentage since vm start:  0.000
+
+CPU: total 4 (initial active 4) (4 cores per cpu, 2 threads per core) family 23 model 24 stepping 1 microcode 0x8108109, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4a, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, clmul, bmi1, bmi2, adx, sha, fma, vzeroupper, clflush, clflushopt
+CPU Model and flags from /proc/cpuinfo:
+model name	: AMD Athlon 3000G with Radeon Vega Graphics
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es
+
+Online cpus: 0-3
+Offline cpus: 4-31
+BIOS frequency limitation: 3500000
+Frequency switch latency (ns): 0
+Available cpu frequencies: 3500000 2300000 1600000 
+Current governor: schedutil
+Core performance/turbo boost: 1
+
+Memory: 4k page, physical 5992412k(196756k free), swap 2097148k(1786364k free)
+Page Sizes: 4k
+
+vm_info: OpenJDK 64-Bit Server VM (17.0.7+7) for linux-amd64 JRE (17.0.7+7), built on Apr 18 2023 00:00:00 by "temurin" with gcc 10.3.0
+
+END.
