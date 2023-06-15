@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch primo",
+            "request": "launch",
+            "mainClass": "aulas.aula0905.primo",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_73ba2ba9"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProvaRevi2",
+            "request": "launch",
+            "mainClass": "provas.prova04.ProvaRevi2",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_73ba2ba9"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProvaRevi",
+            "request": "launch",
+            "mainClass": "provas.prova04.ProvaRevi",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_73ba2ba9"
+        },
+        {
+            "type": "java",
             "name": "VetorConcat",
             "request": "launch",
             "mainClass": "aulas.aula0606.VetorConcat",
