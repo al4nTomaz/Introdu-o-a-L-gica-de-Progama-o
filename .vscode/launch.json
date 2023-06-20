@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MatrizNotas",
+            "request": "launch",
+            "mainClass": "aulas.aula2006.MatrizNotas",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "MatrizesSoma",
+            "request": "launch",
+            "mainClass": "aulas.aula2006.MatrizesSoma",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "Matrizes",
+            "request": "launch",
+            "mainClass": "aulas.aula2006.Matrizes",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "ep16",
+            "request": "launch",
+            "mainClass": "ep16",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "ep17",
+            "request": "launch",
+            "mainClass": "ep17",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
             "name": "Launch primo",
             "request": "launch",
             "mainClass": "aulas.aula0905.primo",
