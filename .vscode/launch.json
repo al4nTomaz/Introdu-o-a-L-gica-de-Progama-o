@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FuncaoSoma",
+            "request": "launch",
+            "mainClass": "aulas.aula0627.FuncaoSoma",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "Funcoes",
+            "request": "launch",
+            "mainClass": "aulas.aula0627.Funcoes",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "provaRevisado",
+            "request": "launch",
+            "mainClass": "provas.provaWg.provaRevisado",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
+            "name": "MatrizesMultiplicada",
+            "request": "launch",
+            "mainClass": "aulas.aula2006.MatrizesMultiplicada",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_2ebfc198"
+        },
+        {
+            "type": "java",
             "name": "MatrizNotas",
             "request": "launch",
             "mainClass": "aulas.aula2006.MatrizNotas",
