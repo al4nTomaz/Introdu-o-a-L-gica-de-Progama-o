@@ -1,29 +1,31 @@
-package provas.prova3.resolução;
+package provas.prova03;
 
 public class ex1 {
 
     public static void main(String[] args) {
         
         Double pedro = 0.8, joao = 0.6;
-        int ano=0, anoP = 1, anoJ = 1, supera=0;
+        int ano=1, anoP = 1, anoJ = 1, supera=0;
+        boolean controle = false;
 
         System.out.println("\n=============================\n");
-        System.out.println("ano: "+(ano+1));
+        System.out.println("ano: "+ano);
         System.out.printf("Pedro: %.2f m\n", pedro);
         System.out.printf("João: %.2f m\n", joao);
 
-        while((pedro <= 1.8) || (joao <= 1.8) || (joao <= pedro)){
-            pedro+=0.01;
-            joao+=0.02;
+        while((pedro<1.8) || (joao<1.8)){
 
-            if(joao <= pedro){
-                supera++;
+            if(joao>pedro && !controle){
+                supera = ano;
+                controle = !controle;
             }
             
-            if (pedro<=1.8) {
-                anoP++;
-            }if(joao<=1.8) {
+            if (pedro<1.8) {
+                pedro+=0.01;
                 anoJ++;
+            }if(joao<1.8) {
+                joao+=0.02;
+                anoP++;
             }
 
             ano++;

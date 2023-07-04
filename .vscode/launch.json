@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Prova",
+            "request": "launch",
+            "mainClass": "Prova",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_24a5bf7c"
+        },
+        {
+            "type": "java",
             "name": "FuncaoSoma",
             "request": "launch",
             "mainClass": "aulas.aula0627.FuncaoSoma",
