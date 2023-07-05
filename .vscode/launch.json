@@ -9,6 +9,13 @@
             "name": "Prova",
             "request": "launch",
             "mainClass": "Prova",
+            "projectName": "Introdu-o-a-L-gica-de-Progama-o_6996a25b"
+        },
+        {
+            "type": "java",
+            "name": "Prova",
+            "request": "launch",
+            "mainClass": "Prova",
             "projectName": "Introdu-o-a-L-gica-de-Progama-o_24a5bf7c"
         },
         {

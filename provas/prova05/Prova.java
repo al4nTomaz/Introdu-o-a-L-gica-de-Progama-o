@@ -133,12 +133,14 @@ public class Prova {
                     soma += distancias[ponto][ponto2];
                     ponto = ponto2;
     
-                    System.out.println("Quer contiuaro trajéto? 1-SIM 0-NÃ0");
+                    System.out.print("Quer continuar o trajéto? 1-SIM 0-NÃ0 ");
+                    System.out.print("-> ");
                     controle = e.nextInt() == 0;
 
                     if (controle) {
 
-                        System.out.println("Quer um novo trajéto? 1-SIM 0-NÃ0");
+                        System.out.print("Quer um novo trajéto? 1-SIM 0-NÃ0 ");
+                        System.out.print("-> ");
                         controleTrajeto = e.nextInt() == 0;
 
                         System.out.println();
@@ -155,7 +157,7 @@ public class Prova {
                     continue;
                 }
     
-                System.out.println("ERRO! O cidade tem que ser diferente!");
+                System.out.println("ERRO! A cidade tem que ser diferente!");
             }
         }
         
